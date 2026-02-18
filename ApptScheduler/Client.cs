@@ -10,7 +10,7 @@ namespace ApptScheduler
     internal class Client
     {
         HttpClient _httpClient;
-        string token = "0e4e7b78-be40-4bc4-8602-b0b380d3c95f";
+        string token = "";
 
         public Client(HttpClient client)
         {
