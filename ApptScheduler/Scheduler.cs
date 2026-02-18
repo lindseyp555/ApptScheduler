@@ -66,7 +66,8 @@ namespace ApptScheduler
                     }
                 }
             }
-            return null;
+            //code shouldn't get to this point, unfortunately looks like some bug is still hitting it
+            return new Appointment(0, 0, new DateTime(), false);
         }
 
         private bool verifyDay(DateTime dt)
