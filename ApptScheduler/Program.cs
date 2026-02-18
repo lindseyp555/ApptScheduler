@@ -14,8 +14,6 @@ class Program
         await RunSchedule(httpClient);
     }
 
-    //I debated for a while on whether or not I should combine my Client and Scheduler classes into one entity. I decided I wanted to respect the separation of concerns as it is nice for testing purposes to keep the scheduler's logic isolated,
-    //but I acknowledge the drawback that running the specified procedure with two separate objects is a little complicated. It would be nice to have this procedure as one method belonging to an object.
     static async Task RunSchedule(HttpClient httpClient)
     {
         Client client = new Client(httpClient);
